@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rajath — Freelance Developer & Designer</title>
+  <!-- Tailwind CDN (for quick prototype). For production, build with PostCSS or Tailwind CLI. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Rajath — Freelance Full‑Stack Developer. Django, Flutter, E2EE, modern UI." />
+  <style>
+    /* Small custom styles for printing the business card area */
+    .print-card { width: 3.5in; height: 2in; }
+    @media print { body * { visibility: hidden; } .print-area, .print-area * { visibility: visible; } .print-area { position: absolute; left: 0; top: 0; } }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed antialiased">
+  <!-- NAV -->
+  <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <!-- simple logo mark -->
+      <div class="w-10 h-10 bg-gradient-to-br from-indigo-600 to-purple-500 rounded-lg flex items-center justify-center text-white font-bold">R</div>
+      <div>
+        <div class="text-lg font-semibold">Rajath</div>
+        <div class="text-xs text-gray-500">Freelance Full-Stack Developer</div>
+      </div>
+    </a>
+    <nav class="space-x-4 hidden md:block">
+      <a href="#about" class="text-sm hover:underline">About</a>
+      <a href="#projects" class="text-sm hover:underline">Projects</a>
+      <a href="#services" class="text-sm hover:underline">Services</a>
+      <a href="#contact" class="text-sm hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-8 items-center">
+    <div>
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">I build secure, user‑friendly web & mobile apps.</h1>
+      <p class="mt-4 text-lg text-gray-600">Specialising in Django backends, Flutter mobile apps and end‑to‑end encrypted storage solutions. I design, implement and ship robust products for startups and teams that care about privacy and UX.</p>
+
+      <div class="mt-6 flex gap-4">
+        <a href="#contact" class="inline-flex items-center gap-2 px-5 py-3 bg-indigo-600 text-white rounded-lg shadow">Hire me</a>
+        <a href="#projects" class="inline-flex items-center gap-2 px-5 py-3 border border-gray-200 rounded-lg">See work</a>
+      </div>
+
+      <div class="mt-6 text-sm text-gray-500">
+        <strong>Availability:</strong> Open to freelance projects (part-time / fixed-price / long-term). Typical response within 24 hours.
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl p-6 shadow-md">
+      <div class="flex flex-col items-center text-center">
+        <div class="w-36 h-36 bg-gray-100 rounded-full flex items-center justify-center text-xl font-semibold">Rajath</div>
+        <div class="mt-4">
+          <div class="font-semibold">Rajath</div>
+          <div class="text-sm text-gray-500">Freelance Full‑Stack Developer</div>
+        </div>
+
+        <div class="mt-6 w-full grid grid-cols-2 gap-3">
+          <div class="text-left">
+            <div class="text-xs text-gray-500">Location</div>
+            <div class="text-sm">Bengaluru, India</div>
+          </div>
+          <div class="text-left">
+            <div class="text-xs text-gray-500">Email</div>
+            <div class="text-sm">rajathramesh2002@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="mt-6 w-full border-t pt-4 text-sm text-gray-600">
+          <div><strong>Specialties:</strong> Django, Flutter, E2EE, AES‑GCM, Chunked uploads, UX</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-6xl mx-auto p-6 mt-8">
+    <div class="grid md:grid-cols-3 gap-6 items-start">
+      <div class="md:col-span-2 bg-white p-6 rounded-2xl shadow">
+        <h2 class="text-2xl font-semibold">About me</h2>
+        <p class="mt-4 text-gray-600">I build reliable, privacy‑focused web and mobile applications. My background spans backend architecture (Django), mobile (Flutter), and cryptography implementations for real products. I emphasise clean code, testability and shipping incremental value fast.</p>
+
+        <h3 class="mt-6 font-semibold">How I work</h3>
+        <ul class="mt-2 list-disc list-inside text-gray-600">
+          <li>Product-first mindset: I prioritise user value over technical novelty.</li>
+          <li>Clear milestones & timely communication.</li>
+          <li>Security & privacy baked into design (E2EE where required).</li>
+        </ul>
+      </div>
+
+      <aside class="bg-white p-6 rounded-2xl shadow">
+        <h4 class="font-semibold">Quick facts</h4>
+        <div class="mt-3 text-sm text-gray-600">
+          <div><strong>Experience:</strong> 5+ years building full‑stack products</div>
+          <div class="mt-2"><strong>Preferred stack:</strong> Django, PostgreSQL, Docker, Flutter</div>
+          <div class="mt-2"><strong>Open for:</strong> Remote freelance, consulting</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="max-w-6xl mx-auto p-6 mt-6">
+    <h2 class="text-2xl font-semibold">Services</h2>
+    <div class="mt-4 grid md:grid-cols-3 gap-4">
+      <div class="bg-white p-5 rounded-xl shadow">
+        <h4 class="font-semibold">Web Apps & APIs</h4>
+        <p class="mt-2 text-sm text-gray-600">Django backends, REST/GraphQL APIs, integrations, scalable hosting.</p>
+      </div>
+      <div class="bg-white p-5 rounded-xl shadow">
+        <h4 class="font-semibold">Mobile Apps (Flutter)</h4>
+        <p class="mt-2 text-sm text-gray-600">Cross‑platform apps with polished UX and native performance.</p>
+      </div>
+      <div class="bg-white p-5 rounded-xl shadow">
+        <h4 class="font-semibold">Encryption & Privacy</h4>
+        <p class="mt-2 text-sm text-gray-600">Client-side E2EE, secure chunked uploads, key management patterns.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-6xl mx-auto p-6 mt-6">
+    <h2 class="text-2xl font-semibold">Selected projects</h2>
+    <!-- <p class="mt-2 text-sm text-gray-600">(Replace these placeholders with your real projects — I included structure and copy you can reuse.)</p> -->
+
+    <div class="mt-4 grid md:grid-cols-3 gap-6">
+      <!-- Project card -->
+      <article class="bg-white rounded-xl shadow p-4">
+        <div class="h-40 bg-gray-100 rounded-md flex items-center justify-center"><img src="photo_1.png" alt="" srcset=""></div>
+        <h3 class="mt-3 font-semibold">Silvora - Encrypted Cloud Storage</h3>
+        <p class="mt-2 text-sm text-gray-600">Built a chunked upload system with AES‑GCM client-side encryption and resumable uploads. Improved reliability and privacy for user data.</p>
+        <div class="mt-3 text-xs text-gray-500">Stack: Django, Postgres, AES‑GCM, Javascript</div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow p-4">
+        <div class="h-40 bg-gray-100 rounded-md flex items-center justify-center"> <img src="photo_2.png" alt="" srcset=""></div>
+        <h3 class="mt-3 font-semibold">GoldCabs - Booking platform</h3>
+        <p class="mt-2 text-sm text-gray-600">End-to-end booking flow, pricing tiers and domain+hosting assistance for a local cab company.</p>
+        <div class="mt-3 text-xs text-gray-500">Stack: React, Node, Stripe</div>
+      </article>
+
+      <article class="bg-white rounded-xl shadow p-4">
+<div class="h-40 bg-gray-100 rounded-md flex items-center justify-center">
+  <img class="max-w-full max-h-full object-contain" src="photo_3.png" alt="">
+</div>        <h3 class="mt-3 font-semibold">Mobile client - Flutter</h3>
+        <p class="mt-2 text-sm text-gray-600">Cross-platform mobile app integrating with a Django backend and secure file sync.</p>
+        <div class="mt-3 text-xs text-gray-500">Stack: Flutter, Dart, Django</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-6xl mx-auto p-6 mt-12">
+    <div class="bg-white p-6 rounded-2xl shadow grid md:grid-cols-2 gap-6">
+      <div>
+        <h2 class="text-2xl font-semibold">Work with me</h2>
+        <p class="mt-2 text-sm text-gray-600">Tell me about your project — timeline, budget range, and the outcome you expect. I’ll reply with a short plan and availability.</p>
+
+        <div class="mt-6 text-sm text-gray-700">
+          <div><strong>Email:</strong> <a href="mailto:rajathramesh2002@gmail.com" class="text-indigo-600">rajathramesh2002@gmail.com</a></div>
+          <div class="mt-2"><strong>LinkedIn:</strong> <a href="#" class="text-indigo-600">www.linkedin.com/in/rajath-r-2k2</a></div>
+          <!-- <div class="mt-2"><strong>GitHub:</strong> <a href="#" class="text-indigo-600">github.com/yourusername</a></div> -->
+        </div>
+      </div>
+
+      <form class="space-y-4" onsubmit="event.preventDefault(); alert('Form placeholder — connect to your backend or use Formspree.');">
+        <div>
+          <label class="block text-sm text-gray-600">Name</label>
+          <input class="mt-1 w-full border rounded-md p-2" required />
+        </div>
+        <div>
+          <label class="block text-sm text-gray-600">Email</label>
+          <input type="email" class="mt-1 w-full border rounded-md p-2" required />
+        </div>
+        <div>
+          <label class="block text-sm text-gray-600">Message</label>
+          <textarea class="mt-1 w-full border rounded-md p-2" rows="4" required></textarea>
+        </div>
+        <div class="flex items-center gap-3">
+          <button class="px-4 py-2 bg-indigo-600 text-white rounded">Send</button>
+          <button type="button" class="px-4 py-2 border rounded" onclick="downloadVCard()">Download vCard</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="max-w-6xl mx-auto p-6 text-sm text-gray-500">
+    © <span id="year"></span> Rajath — Built with care. 
+  </footer>
+<!-- 
+ Business card SVG + print area (hidden on normal view) 
+  <div class="max-w-6xl mx-auto p-6 mt-8">
+    <h3 class="text-lg font-semibold">Business card preview (printable)</h3>
+    <p class="text-sm text-gray-500">Use the area below to export a 300 DPI image/PDF. Replace contact details and the QR placeholder with your site URL.</p>
+
+    <div class="mt-4 bg-white p-4 rounded-lg shadow overflow-hidden">
+       Front 
+      <div class="flex gap-4 items-center p-4">
+        <div class="w-40">
+           SVG card (3.5in x 2in scaled)
+          <svg class="print-card" viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+            <rect width="100%" height="100%" rx="12" fill="#1F2937" />
+            <text x="24" y="60" fill="#fff" font-size="28" font-family="Arial" font-weight="700">Rajath</text>
+            <text x="24" y="90" fill="#9CA3AF" font-size="12" font-family="Arial">Freelance Full-Stack Developer</text>
+            <rect x="24" y="110" width="80" height="28" rx="6" fill="#4F46E5"/>
+            <text x="36" y="129" fill="#fff" font-size="10" font-family="Arial">hello@yourdomain.com</text>
+          </svg>
+        </div>
+
+         Back: QR + details 
+        <div class="flex-1">
+          <svg class="print-card" viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+            <rect width="100%" height="100%" rx="12" fill="#FFFFFF" stroke="#E5E7EB" />
+            <text x="24" y="40" fill="#111827" font-size="12" font-family="Arial" font-weight="700">Contact</text>
+            <text x="24" y="66" fill="#6B7280" font-size="10" font-family="Arial">hello@yourdomain.com · +91 9xxxx xxxxx</text>
+            <text x="24" y="86" fill="#6B7280" font-size="10" font-family="Arial">github.com/yourusername</text>
+            <rect x="240" y="36" width="80" height="80" fill="#F3F4F6" stroke="#E5E7EB" />
+            <text x="246" y="80" fill="#9CA3AF" font-size="8" font-family="Arial">QR placeholder</text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="mt-4 text-sm text-gray-600">Printing notes: Export each SVG at 300 DPI (3.5in × 2in), convert to CMYK for print, include 3mm bleed around edges. Use 350gsm matte card for premium feel.</div>
+
+      <div class="mt-4">
+        <button class="px-4 py-2 bg-indigo-600 text-white rounded" onclick="window.print()">Print / Export as PDF</button>
+        <button class="px-4 py-2 border rounded ml-2" onclick="downloadCardSVG()">Download SVG</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function downloadVCard() {
+      const vcard = `BEGIN:VCARD\nVERSION:3.0\nFN:Rajath\nEMAIL;TYPE=INTERNET:hello@yourdomain.com\nTEL;TYPE=CELL:+919xxxxxxxxx\nEND:VCARD`;
+      const blob = new Blob([vcard], { type: 'text/vcard' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'rajath.vcf'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    }
+
+    function downloadCardSVG() {
+      // Grabs the first SVG and downloads it. Update to choose a different card if required.
+      const svg = document.querySelectorAll('svg.print-card')[0];
+      const serializer = new XMLSerializer();
+      let source = serializer.serializeToString(svg);
+      // add namespaces
+      if(!source.match(/^<svg[^>]+xmlns="http\:\/\/www\.w3\.org\/2000\/svg"/)) {
+        source = source.replace(/^<svg/, '<svg xmlns="http://www.w3.org/2000/svg"');
+      }
+      const url = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(source);
+      const a = document.createElement('a'); a.href = url; a.download = 'business_card_front.svg'; document.body.appendChild(a); a.click(); a.remove();
+    }
+  </script> -->
+</body>
+</html>
