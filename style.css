@@ -1,7 +1,5 @@
 :root {
-  /* Rasova brand, true dark, same palette as the product itself.
-     Committed to dark-only on purpose, one considered look instead of
-     a light variant that drifted toward the generic warm-cream default. */
+  /* Rasova brand, true dark, the default look. */
   --bg: #0a0a0a; --surface: #151310; --text: #f2ede1; --muted: #a89a7e; --border: #2b2620;
   --accent: #c5a059; --accent-soft: #241f16; --accent-2: #d9b876;
   --radius: 12px; --shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.25);
@@ -9,11 +7,44 @@
   --serif: "DM Serif Display", Georgia, serif;
   --mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
 }
+/* Light variant, on purpose a clean neutral white, not the warm-cream
+   tone that reads as a generic templated default. Accent deepened for
+   contrast against white, same gold family, not the same hex. */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #ffffff; --surface: #ffffff; --text: #1c1712; --muted: #6f6a60; --border: #e4e1d9;
+    --accent: #9c7c3f; --accent-soft: #f2f1ed; --accent-2: #9c7c3f;
+    --shadow: 0 1px 2px rgba(28, 23, 18, 0.04), 0 4px 16px rgba(28, 23, 18, 0.04);
+  }
+}
+:root[data-theme="light"] {
+  --bg: #ffffff; --surface: #ffffff; --text: #1c1712; --muted: #6f6a60; --border: #e4e1d9;
+  --accent: #9c7c3f; --accent-soft: #f2f1ed; --accent-2: #9c7c3f;
+  --shadow: 0 1px 2px rgba(28, 23, 18, 0.04), 0 4px 16px rgba(28, 23, 18, 0.04);
+}
+:root[data-theme="dark"] {
+  --bg: #0a0a0a; --surface: #151310; --text: #f2ede1; --muted: #a89a7e; --border: #2b2620;
+  --accent: #c5a059; --accent-soft: #241f16; --accent-2: #d9b876;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.25);
+}
 * { box-sizing: border-box; }
 body {
   margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans);
   line-height: 1.65; -webkit-font-smoothing: antialiased;
+  transition: background 0.2s ease, color 0.2s ease;
 }
+
+.theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 8px; margin-left: 0.5rem;
+  border: 1px solid var(--border); background: transparent; color: var(--muted);
+  cursor: pointer; transition: color 0.15s, border-color 0.15s;
+}
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.theme-toggle svg { display: block; }
+.theme-toggle .icon-moon { display: none; }
+:root[data-theme="light"] .theme-toggle .icon-sun { display: none; }
+:root[data-theme="light"] .theme-toggle .icon-moon { display: block; }
 .wrap { max-width: 980px; margin: 0 auto; padding: 0 1.5rem; }
 
 header.top { padding: 1.6rem 0; border-bottom: 1px solid var(--border); }
